@@ -24,14 +24,13 @@ def configure(qt_main_window):
     # devices
     qt_main_window.stacked_frame_dict["devices"] = []
     qt_main_window.stacked_frame_dict["devices"].append("view")
-    qt_main_window.stacked_frame_dict["devices"].append("messages")
-    qt_main_window.stacked_frame_dict["devices"].append("all known")
-    qt_main_window.stacked_frame_dict["devices"].append("identify")     
+    qt_main_window.stacked_frame_dict["devices"].append("messages")    
 
     # help
     qt_main_window.stacked_frame_dict["help"] = []        
     qt_main_window.stacked_frame_dict["help"].append("about")
-    qt_main_window.stacked_frame_dict["help"].append("getting started")
+    qt_main_window.stacked_frame_dict["help"].append("getting_started")
+
 
 def setup(qt_main_window):
     index = 0
@@ -60,6 +59,7 @@ def setup(qt_main_window):
     qt_main_window.central_widget.setLayout(qt_main_window.stacked_layout)
     qt_main_window.setCentralWidget(qt_main_window.central_widget)    
 
+
 def placeholder_frame(qt_main_window,group,item):
     frame = qtw.QFrame()
     frame_name = group + "_" + item + "_frame"
@@ -73,6 +73,7 @@ def placeholder_frame(qt_main_window,group,item):
     frame.setLayout(v_layout)
     return frame
 
+
 def styled_label(qt_main_window,fontsize): 
     styled_label = qtw.QLabel()
     font = styled_label.font()
@@ -81,6 +82,7 @@ def styled_label(qt_main_window,fontsize):
     styled_label.setAlignment(qtc.Qt.AlignmentFlag.AlignCenter | qtc.Qt.AlignmentFlag.AlignVCenter)
     styled_label.setFrameStyle(qt_main_window.frame_style)  
     return styled_label  
+        
         
 def next_page(qt_main_window):
     count = qt_main_window.stacked_layout.count()

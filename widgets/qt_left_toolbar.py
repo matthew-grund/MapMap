@@ -15,6 +15,7 @@ import widgets.styled as mmw
 
 class QTLeftToolBar(qtw.QToolBar):
 
+
     def __init__(self, q_main_window):
         super().__init__()
         self.q_main_window = q_main_window
@@ -23,8 +24,8 @@ class QTLeftToolBar(qtw.QToolBar):
         self.setMovable(False)
         self.icon_path = "/data/home_ws/icons/"
         q_main_window.addToolBar(qtc.Qt.LeftToolBarArea,self)
-        self.current_active_button_group = "home"
-        self.current_active_button_item = "overview"
+        self.current_active_button_group = "map"
+        self.current_active_button_item = "view"
         self.active_button_color = "#ffb75b"
         self.normal_button_color = "white"
         self.action_dict = {}
@@ -35,14 +36,16 @@ class QTLeftToolBar(qtw.QToolBar):
         # self.add_toolbar_spacer()
         self.add_normal_toolbar_button("map","layers","layers_96.png")
         # self.add_toolbar_spacer()
+        self.add_toolbar_spacer()
+        self.add_normal_toolbar_button("devices","view","gps_fixed_96.png")
+        self.add_normal_toolbar_button("devices","messages","list_alt_96.png")
+        self.add_toolbar_spacer()
+        self.add_normal_toolbar_button("help","getting_started","help_outline_96.png")
+        self.add_normal_toolbar_button("help","about","info_96.png")
+        self.add_toolbar_spacer()
         self.add_normal_toolbar_button("map","config","settings_96.png")
-        self.add_toolbar_spacer()
-        self.add_normal_toolbar_button("debug","messages","list_alt_96.png")
-        self.add_toolbar_spacer()
-        self.add_normal_toolbar_button("help","about","help_outline_96.png")
-        self.add_toolbar_spacer()
         
-        
+         
     def add_toolbar_spacer(self):
         spacer = mmw.styled_spacer(self.q_main_window)
         self.addWidget(spacer)
@@ -88,7 +91,7 @@ class QTLeftToolBar(qtw.QToolBar):
 
     
     def toolbar_callback(self, group_name, item_name):   
-        # print("Toolbar: " + group_name + ":" + item_name)
+        print("Left Toolbar: " + group_name + ":" + item_name)
         self.select_button(group_name, item_name)
         self.q_main_window.statusBar().showMessage(group_name + ":" + item_name)
         self.q_main_window.stacked_layout.setCurrentIndex(self.q_main_window.stacked_frame_indices[group_name][item_name]) 
