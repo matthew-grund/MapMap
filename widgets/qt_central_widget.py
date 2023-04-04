@@ -1,7 +1,7 @@
 #
-#  ROS Home Qt UI
+#  ROS Map Qt UI
 #
-# Copyright 2022 Matthew Grund
+# Copyright 2023 Matthew Grund
 #
 # Licensed under the BSD 2 Clause license;
 # you may not use this file except in compliance with the License.
@@ -12,6 +12,7 @@ import PySide6.QtWidgets as qtw
 import PySide6.QtCore as qtc
 import PySide6.QtGui as qtg
 
+import widgets.map_frames as map_frames
 
 def configure(qt_main_window):
     # every stacked frame in the central widget
