@@ -21,7 +21,7 @@ import widgets.qt_left_toolbar as left_toolbar
 import styles.qt_style_sheet as qt_style_sheet
 import core.keyboard_shortcuts as keyboard_shortcuts
 
-class MappyMap(qtw.QMainWindow):
+class MapMap(qtw.QMainWindow):
     
     def __init__(self):
         self.app = qtw.QApplication(sys.argv)
@@ -78,7 +78,7 @@ class MappyMap(qtw.QMainWindow):
 ################################################        
 def main(args=None):
     # rclpy.init(args=args)
-    map = MappyMap()
+    map = MapMap()
     map.show()
     ret=map.app.exec()
     # rclpy.shutdown()

@@ -36,8 +36,9 @@ def configure(qt_main_window):
 def setup(qt_main_window):
     index = 0
     qt_main_window.central_widget = qtw.QWidget()
+    qt_main_window.central_widget.setObjectName('main_window_central_widget')
     qt_main_window.stacked_layout = qtw.QStackedLayout()
-    
+    qt_main_window.stacked_layout.setObjectName('main_window_stacked_layout')
     qt_main_window.stacked_frame_indices = {}
     for group in qt_main_window.stacked_frame_dict:
         qt_main_window.stacked_frame_indices[group] = {}
@@ -68,6 +69,7 @@ def placeholder_frame(qt_main_window,group,item):
     frame.setAccessibleName(frame_name)
     frame.setFrameStyle(qt_main_window.frame_style)
     v_layout = qtw.QVBoxLayout()
+    v_layout.setObjectName(frame_name + '_layout')
     title = styled_label(qt_main_window,24)
     title.setText(frame_name)
     v_layout.addWidget(title)

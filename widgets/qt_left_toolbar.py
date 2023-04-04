@@ -53,7 +53,9 @@ class QTLeftToolBar(qtw.QToolBar):
         
     def add_normal_toolbar_button(self,group_name,item_name,icon_file):
         i = self.normal_icon(self.icon_path + icon_file)
-        a = qtg.QAction(i, group_name.title(), self)
+        button_name = group_name + ": " + item_name
+        button_name = button_name.title()   # this is also the tooltip
+        a = qtg.QAction(i, button_name, self)
         a.triggered.connect(lambda : self.toolbar_callback(group_name,item_name))
         self.addAction(a)
         if group_name not in self.action_dict:

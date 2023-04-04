@@ -1,7 +1,7 @@
 #
-#  ROS Home Qt UI
+#  MapMap - a ROS Map UI
 #
-# Copyright 2022 Matthew Grund
+# Copyright 2023 Matthew Grund
 #
 # Licensed under the BSD 2 Clause license;
 # you may not use this file except in compliance with the License.
@@ -30,4 +30,5 @@ QMenuBar {
     background-color: black ; 
     color: white ;
 }
+
 '''
