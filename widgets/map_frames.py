@@ -5,8 +5,10 @@ import PySide6.QtWebEngineCore as qtweb
 import PySide6.QtWebEngineWidgets as qtwebw
 
 import folium
+
 import json
 from urllib.request import urlopen
+import os
   
 class MapViewFrame(qtw.QFrame):
 
@@ -55,16 +57,12 @@ class MapViewFrame(qtw.QFrame):
 
     def init_data_layers(self):
         self.data_layer = {}
-        # self.data_layer['grat5']=folium.GeoJson(data=self.fetch_data_from_url('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_graticules_5.geojson'),name = 'Grid 5')
+        # FIXME: adding these blanks the map
+        #self.data_layer['grat5']=folium.GeoJson('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_graticules_5.geojson',name = 'Grid 5')
+        #self.data_layer['countries']=folium.GeoJson("http://geojson.xyz/naturalearth-3.3.0/ne_50m_admin_0_countries.geojson", name='Country borders')
+        self.data_layer['whoi']=folium.GeoJson(os.path.join('geojson','woods_hole.json'))
 
 
-    def fetch_data_from_url(self,geojson_url):
-        # store the response of URL
-        response = urlopen(geojson_url)
-        # storing the JSON response 
-        # from url in data
-        data_json = json.loads(response.read())
-        return data_json
 
 
 def create_map_view_frame(qt_main_window):

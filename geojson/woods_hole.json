@@ -1,0 +1,309 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "fillColor": "#0c0381",
+          "marker-size": "small",
+          "name": "Woods Hole Oceanographic Institution"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67150622059303,
+            41.52462039958593
+          ],
+          "type": "Point"
+        },
+        "id": 0
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "fillColor": "#730303",
+          "marker-size": "small",
+          "name": "red nun"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67495025188961,
+            41.52115118448049
+          ],
+          "type": "Point"
+        },
+        "id": 1
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "fillColor": "#077707",
+          "marker-size": "small",
+          "name": "green can"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67504815251952,
+            41.520497512224495
+          ],
+          "type": "Point"
+        },
+        "id": 2
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "fillColor": "#077707",
+          "marker-size": "small",
+          "name": "Middle Ledge tower"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67999790864978,
+            41.51913449218881
+          ],
+          "type": "Point"
+        },
+        "id": 3
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "fillColor": "#077707",
+          "marker-size": "small",
+          "name": "green can"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.68441961539483,
+            41.51878505382311
+          ],
+          "type": "Point"
+        },
+        "id": 4
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "fillColor": "#077707",
+          "marker-size": "small",
+          "name": "stone marker"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.68355867022011,
+            41.51866922272484
+          ],
+          "type": "Point"
+        },
+        "id": 5
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "fillColor": "#730303",
+          "marker-size": "small",
+          "name": "red can"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67617535376583,
+            41.51839567030078
+          ],
+          "type": "Point"
+        },
+        "id": 6
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "fillColor": "#730303",
+          "marker-size": "small",
+          "name": "red nun"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67756205582658,
+            41.51901823567445
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "green can",
+          "fillColor": "#077707",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67578593940071,
+            41.51731482091287
+          ],
+          "type": "Point"
+        },
+        "id": 8
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "red nun",
+          "fillColor": "#730303",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67896649019214,
+            41.51970716208183
+          ],
+          "type": "Point"
+        },
+        "id": 9
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name ": "green can",
+          "fillColor": "#077707",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67761733904129,
+            41.51997024156
+          ],
+          "type": "Point"
+        },
+        "id": 10
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "red nun",
+          "fillColor": "#730303",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67782938564557,
+            41.52060518366986
+          ],
+          "type": "Point"
+        },
+        "id": 11
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "red nun",
+          "fillColor": "#730303",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.68085392615141,
+            41.52011116053333
+          ],
+          "type": "Point"
+        },
+        "id": 12
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "green can",
+          "fillColor": "#077707",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.68124686977104,
+            41.5193008339175
+          ],
+          "type": "Point"
+        },
+        "id": 13
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "red nun",
+          "fillColor": "#730303",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.6849288838583,
+            41.519603017300085
+          ],
+          "type": "Point"
+        },
+        "id": 14
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "red nun",
+          "fillColor": "#730303",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.68699619645771,
+            41.51997805645152
+          ],
+          "type": "Point"
+        },
+        "id": 15
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "steamship dock",
+          "fillColor": "#619eff",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.67082650754907,
+            41.52283799848274
+          ],
+          "type": "Point"
+        },
+        "id": 16
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "red nun",
+          "fillColor": "#730303",
+          "marker-size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.69783309362998,
+            41.51508463103366
+          ],
+          "type": "Point"
+        },
+        "id": 17
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "green can",
+          "fillColor": "#077707",
+          "size": "small"
+        },
+        "geometry": {
+          "coordinates": [
+            -70.69787533842123,
+            41.51485115553123
+          ],
+          "type": "Point"
+        },
+        "id": 18
+      }
+    ]
+  }
