@@ -25,12 +25,15 @@ class MapViewFrame(qtw.QFrame):
         self.init_base_layers()
         self.init_data_layers()
         self.web_map = folium.Map(location=[41.533,-70.683],zoom_start=15,tiles=self.base_layer['dark'])
+        self.web_map.get_root().html.add_child(folium.JavascriptLink('./scripts/map_addons.js'))
+        self.web_map.get_root().html.add_child(folium.CssLink('./styles/map_style.css'))
         for name in self.base_layer:
             if name != "dark":
                 self.base_layer[name].add_to(self.web_map)
         for name in self.data_layer:
             self.data_layer[name].add_to(self.web_map)        
-        folium.LayerControl().add_to(self.web_map)     
+        folium.LayerControl().add_to(self.web_map) 
+            
         self.web_view.setHtml(self.web_map.get_root().render())
         self.layout.addWidget(self.web_view)
         self.setLayout(self.layout)     
